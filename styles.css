@@ -1,45 +1,52 @@
 .btn1 {
-    border-radius: 50%;
+    border-radius: 32%;
     border: none;
-    width: 100px;
-    height: 100px;
-    background-color: skyblue;
-    color: white;
+    width: 81px;
+    height: 81px;
+    background-color: white;
+    color: black;
     cursor:pointer;
     font-weight: bold;
     font-size: 50px;
+    top:10px;
+    position: relative;
+
   
 }
 
 .btn2 {
-    border-radius: 50%;
+    border-radius: 32%;
     border: none;
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    color: white;
+    width: 81px;
+    height: 81px;
+    background-color: white;
+    color: black;
     cursor:pointer;
     font-weight: bold;
     font-size: 50px;
+    top:10px;
+    position: relative;
    
     
 }
 
 .btn3{
-    border-radius: 50%;
+    border-radius: 32%;
     border: none;
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    color: white;
+    width: 81px;
+    height: 81px;
+    background-color: white;
+    color: black;
     cursor:pointer;
     font-weight: bold;
     font-size:50px;
+    position: relative;
+    top: 10px;
    
 }
 
 .btn4{
-    border-radius: 50%;
+    border-radius: 32%;
     border: none;
     width: 100px;
     height: 100px;
@@ -156,69 +163,80 @@
 }
 
 .btn13{
-    border-radius: 50%;
+    border-radius: 32%;
     border: none;
-    width: 100px;
-    height: 100px;
-    background-color: skyblue;
-    color: white;
+    width: 81px;
+    height: 81px;
+    background-color: white;
+    color: black;
     cursor:pointer;
     font-weight: bold;
     font-size: 50px;
     margin-top: 4px;
+    top:10px;
+    position: relative;
 }
 
 .btn14{
-    border-radius: 50%;
+    border-radius: 32%;
     border: none;
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    color: white;
+    width: 81px;
+    height: 81px;
+    background-color: white;
+    color: black;
     cursor:pointer;
     font-weight: bold;
     font-size: 50px;
     margin-top: 4px;
+    top:10px;
+    position: relative;
 }
 
 .btn15{
-    border-radius: 50%;
+    border-radius: 32%;
     border: none;
-    width: 100px;
-    height: 100px;
-    background-color: skyblue;
-    color: white;
+    width: 81px;
+    height: 81px;
+    background-color: white;
+    color: black;
     cursor:pointer;
     font-weight: bold;
     font-size: 50px;
     margin-top: 4px;
+    top:10px;
+    position: relative;
 }
 
 .btn16{
-    border-radius: 50%;
+    border-radius: 32%;
     border: none;
-    width: 100px;
-    height: 100px;
-    background-color: skyblue;
-    color: white;
+    width: 81px;
+    height: 81px;
+    background-color: white;
+    color: black;
     cursor:pointer;
     font-weight: bold;
     font-size: 50px;
     margin-top: 4px;
+    position: relative;
+    top: 10px;
 }
 
 .btn17{
    
-    border-radius: 50%;
+    border-radius: 32%;
     border: none;
-    width: 100px;
-    height: 100px;
-    background-color: skyblue;
-    color: white;
+    width: 81px;
+    height: 81px;
+    background-color: white;
+    color: black;
     cursor:pointer;
     font-weight: bold;
     font-size: 50px;
     margin-top: 4px;
+    top: 10px;
+    position: relative;
+
 }
 
 .keys{
