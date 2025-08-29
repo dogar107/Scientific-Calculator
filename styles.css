@@ -48,118 +48,137 @@
 .btn4{
     border-radius: 32%;
     border: none;
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    color: white;
+    width: 81px;
+    height: 81px;
+    background-color: white;
+    color: black;
     cursor:pointer;
     font-weight: bold;
     font-size: 50px;
+    top:10px;
+    position: relative;
   
 }
 
 .btn5{
-    border-radius: 50%;
+    border-radius: 32%;
     border: none;
-    width: 100px;
-    height: 100px;
-    background-color: skyblue;
-    color: white;
+    width: 81px;
+    height: 81px;
+    background-color: white;
+    color: black;
     cursor:pointer;
     font-weight: bold;
     font-size: 50px;
     margin-top: 4px;
+     position: relative;
+    top:10px;
 }
 
 .btn6{
-    border-radius: 50%;
+    border-radius: 32%;
     border: none;
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    color: white;
+    width: 81px;
+    height: 81px;
+    background-color: white;
+    color: black;
     cursor:pointer;
     font-weight: bold;
     font-size: 50px;
     margin-top: 4px;
+    position: relative;
+    top:10px;
 }
 
 .btn7{
-    border-radius: 50%;
+    border-radius: 32%;
     border: none;
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    color: white;
+    width: 81px;
+    height: 81px;
+    background-color: white;
+    color: black;
     cursor:pointer;
     font-weight: bold;
     font-size: 50px;
     margin-top: 4px;
+    top:10px;
+    position: relative;
+
 }
 
 .btn8{
-    border-radius: 50%;
+    border-radius: 32%;
     border: none;
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    color: white;
+    width: 81px;
+    height: 81px;
+    background-color: white;
+    color: black;
     cursor:pointer;
     font-weight: bold;
     font-size: 50px;
     margin-top: 4px;
+    top:10px;
+    position: relative;
 }
 
 .btn9{
-    border-radius: 50%;
+    border-radius: 32%;
     border: none;
-    width: 100px;
-    height: 100px;
-    background-color: skyblue;
-    color: white;
+    width: 81px;
+    height: 81px;
+    background-color: white;
+    color: black;
     cursor:pointer;
     font-weight: bold;
     font-size: 50px;
     margin-top: 4px;
+    top:10px;
+    position: relative;
 }
 
 .btn10{
-    border-radius: 50%;
+    border-radius: 32%;
     border: none;
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    color: white;
+    width: 81px;
+    height: 81px;
+    background-color: white;
+    color: black;
     cursor:pointer;
     font-weight: bold;
     font-size:50px;
     margin-top: 4px;
+    top:10px;
+    position: relative;
 }
 
 .btn11{
-    border-radius: 50%;
+    border-radius: 32%;
     border: none;
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    color: white;
+    width: 81px;
+    height: 81px;
+    background-color: white;
+    color: black;
     cursor:pointer;
     font-weight: bold;
     font-size: 50px;
     margin-top: 4px;
+    top:10px;
+    position: relative;
 }
 
 .btn12{
-    border-radius: 50%;
+    border-radius: 32%;
     border: none;
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    color: white;
+    width: 81px;
+    height: 81px;
+    background-color: white;
+    color: black;
     cursor:pointer;
     font-weight: bold;
     font-size: 50px;
     margin-top: 4px;
+    top:10px;
+    position: relative;
 }
 
 .btn13{
@@ -249,7 +268,7 @@
 .display{
     display: flex;
     flex-direction: row;
-    background-color: mediumaquamarine;
+    background-color: black;
     color: white;
     border: none;
     width:442px;
@@ -261,7 +280,7 @@
 }
 
 .calculator{
-background-color: red;
+background-color: darkblue;
 border-radius: 15px;
 max-width: 500px;
 margin-left: 432px;
