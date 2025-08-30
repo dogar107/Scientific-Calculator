@@ -466,3 +466,12 @@ display: flex;
     top: 37%;
     left: 43%;
 }
+
+.alpha::before {
+      content: "Alpha";
+    position: absolute;
+    font-size: 14px;
+    top: 37%;
+    left: 43%;
+}
+
