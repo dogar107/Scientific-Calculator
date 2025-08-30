@@ -491,3 +491,13 @@ display: flex;
     left: 62%;
 }
 
+.CALC::before{
+ content: "SOLVE =";
+    position: absolute;
+    font-size: 14px;
+    top: 37%;
+    left: 62%;
+}
+
+
+
