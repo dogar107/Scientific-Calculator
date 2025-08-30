@@ -483,7 +483,7 @@ display: flex;
     left: 53%;
 }
 
-.ON::before{
+.mode::before{
  content: "ON";
     position: absolute;
     font-size: 14px;
