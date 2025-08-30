@@ -271,11 +271,12 @@
     background-color: aliceblue;
     color: white;
     border: none;
-    width:442px;
+    width:438px;
     height:103px;
-    margin-left: 23px;
+    margin-left: 9px;
     margin-right: 9px;
     font-size: 73px;
+    top: -9px;
 }
 
 .calculator{
@@ -461,6 +462,6 @@ display: flex;
       content: "Shift";
     position: absolute;
     font-size: 14px;
-    top: 28%;
-    left: 49%;
+    top: 37%;
+    left: 43%;
 }
