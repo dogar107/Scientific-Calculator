@@ -458,7 +458,9 @@ display: flex;
 }
 
 .shift::before {
-  content: "Shift";
-  position: absolute;
-  font-size: 14px;
+      content: "Shift";
+    position: absolute;
+    font-size: 14px;
+    top: 28%;
+    left: 49%;
 }
