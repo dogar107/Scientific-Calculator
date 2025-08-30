@@ -512,5 +512,18 @@ display: flex;
     background: black;
 }
 
+.integral{
+display: flex;
+    border-radius: 16px;
+    width: 80px;
+    height: 43px;
+    top: 22px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+        color: white;
+    background: black;
+}
+
 
 
