@@ -260,7 +260,7 @@
 
 .keys{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(5,1fr);
     padding: 20px;
 
 }
@@ -268,19 +268,18 @@
 .display{
     display: flex;
     flex-direction: row;
-    background-color: black;
+    background-color: aliceblue;
     color: white;
     border: none;
     width:442px;
     height:103px;
-    margin-left: 8px;
-    margin-top: 11px;
+    margin-left: 23px;
     margin-right: 9px;
     font-size: 73px;
 }
 
 .calculator{
-background-color: darkblue;
+background-color: red;
 border-radius: 15px;
 max-width: 500px;
 margin-left: 432px;
@@ -364,4 +363,90 @@ background-color: green;
 
 .btn17:hover{
     background-color: olive;
+}
+
+.replay{
+    display: flex;
+    border-radius: 51px;
+    width: 64px;
+    height: 64px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    left: 9px;
+    position: relative;
+}
+
+.mode{
+    display: flex;
+    border-radius: 84%;
+    width: 80px;
+    height: 56px;
+    background-color: darkslateblue;
+    border: none;
+}
+
+.shift{
+display: flex;
+    border-radius: 84%;
+    width: 80px;
+    height: 56px;
+    background-color: darkslateblue;
+    border: none;
+}
+
+.alpha{
+    display: flex
+;
+    border-radius: 84%;
+    width: 80px;
+    height: 56px;
+    background-color: darkslateblue;
+    border: none;
+}
+
+.ON{
+display: flex;
+    border-radius: 84%;
+    width: 80px;
+    height: 56px;
+    background-color: darkslateblue;
+    border: none;
+}
+
+.box{
+background-color: gray;
+    float: right;
+    top: -58px;
+    position: relative;
+    width: 143px;
+    height: 67px;
+    left: -12px;
+    border-radius: 9px;
+}
+
+.logo{
+color: black; 
+    left: 25px;
+    position: relative;
+}
+
+.p2{
+left: 17px;
+    position: relative;
+    font-style: italic;
+}
+
+.p3{
+left: 25px;
+    position: relative;
+}
+
+.p4{
+float: right;
+float: right;
+left: 126px;
+position: relative;
+top: 16px;
 }
