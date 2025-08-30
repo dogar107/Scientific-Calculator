@@ -492,11 +492,11 @@ display: flex;
 }
 
 .CALC::before{
- content: "SOLVE =";
+     content: "SOLVE =";
     position: absolute;
     font-size: 14px;
-    top: 37%;
-    left: 62%;
+    top: -61%;
+    left: 14%;
 }
 
 .CALC{
