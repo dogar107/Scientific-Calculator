@@ -458,7 +458,10 @@ display: flex;
 }
 
 .shift::before {
-  display: block;
-  margin-bottom: 7px;
+  content: "Shift";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 14px;
-}   
+}
