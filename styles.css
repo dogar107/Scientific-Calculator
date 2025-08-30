@@ -277,6 +277,7 @@
     margin-right: 9px;
     font-size: 73px;
     top: -9px;
+    position: relative;
 }
 
 .calculator{
