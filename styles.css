@@ -459,6 +459,6 @@ display: flex;
 
 .shift::before {
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 7px;
   font-size: 14px;
 }   
