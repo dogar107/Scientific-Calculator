@@ -450,3 +450,9 @@ left: 126px;
 position: relative;
 top: 16px;
 }
+
+.p1{
+align-content: flex-start;
+justify-content: center;
+display: flex;
+}
