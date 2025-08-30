@@ -464,7 +464,7 @@ display: flex;
     position: absolute;
     font-size: 14px;
     top: 37%;
-    left: 43%;
+    left: 36%;
 }
 
 .alpha::before {
@@ -472,6 +472,14 @@ display: flex;
     position: absolute;
     font-size: 14px;
     top: 37%;
-    left: 51%;
+    left: 42%;
+}
+
+.ON::before{
+ content: "MODE SETUP";
+    position: absolute;
+    font-size: 14px;
+    top: 37%;
+    left: 42%;
 }
 
