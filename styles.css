@@ -8,7 +8,7 @@
     cursor:pointer;
     font-weight: bold;
     font-size: 50px;
-    top:10px;
+    top:95px;
     position: relative;
 
   
@@ -534,8 +534,9 @@ display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
-        color: white;
+    color: white;
     background: black;
+    left: 84px;
 }
 
 .log{
@@ -547,8 +548,9 @@ display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
-        color: white;
+    color: white;
     background: black;
+    left: 85px;
 }
 
 
