@@ -4,7 +4,15 @@
     display: grid;
     grid-template-columns: repeat(5,1fr);
     padding: 20px;
+    gap: 13px;
 
+}
+
+.functionkeys{
+    position: relative;
+    top: 97px;
+    left: -272px;
+    gap: 34px;
 }
 
 .display{
@@ -213,7 +221,7 @@ display: flex;
     position: absolute;
     font-size: 14px;
     top: 39%;
-    left: 559px;
+        left: 569px;
 }
 
 .ON::before{
@@ -221,7 +229,7 @@ display: flex;
     position: absolute;
     font-size: 14px;
    top: 39%;
-    left: 706px;
+    left: 730px;
 }
 
 .mode::before{
@@ -229,7 +237,7 @@ display: flex;
     position: absolute;
     font-size: 15px;
     top: 39%;
-    left: 821px;
+    left: 865px;
 }
 
 .CALC::before{
@@ -509,5 +517,18 @@ display: flex;
     
 
 }
+
+.btn2{
+    left: -120px;
+    position: relative;
+    top: 10px;
+    width: 80px;
+    height: 41px;
+    border-radius: 16px;
+    background: white;
+    font-size: 23px;
+}
+
+
 
 
