@@ -463,32 +463,32 @@ display: flex;
       content: "SHIFT";
     position: absolute;
     font-size: 14px;
-    top: 37%;
-    left: 36%;
+        top: 39%;
+    left: 35%;
 }
 
 .alpha::before {
       content: "ALPHA";
     position: absolute;
     font-size: 14px;
-    top: 37%;
-    left: 42%;
+    top: 39%;
+    left: 41%;
 }
 
 .ON::before{
  content: "MODE SETUP";
     position: absolute;
     font-size: 14px;
-    top: 37%;
-    left: 53%;
+   top: 39%;
+    left: 52%;
 }
 
 .mode::before{
  content: "ON";
     position: absolute;
-    font-size: 14px;
-    top: 37%;
-    left: 62%;
+    font-size: 15px;
+    top: 39%;
+    left: 60%;
 }
 
 .CALC::before{
