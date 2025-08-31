@@ -275,6 +275,16 @@ display: flex;
     background: black;
 }
 
+.integral::before{
+    content: "d/dx = :";
+    font-size: 14px;
+    top: -63%;
+    left: 18px;
+    position: absolute;
+    color: white;
+
+}
+
 .x⁻¹{
 display: flex
 ;
@@ -289,6 +299,51 @@ display: flex
     background: black;
     left: 95px;
 }
+
+.x⁻¹::before{
+    content: "x!";
+    font-size: 14px;
+    top: -60%;
+    left: 32px;
+    position: absolute;
+    color: white;
+
+}
+
+.log::before{
+    content: "-";
+    font-size: 14px;
+    top: -95%;
+    left: 10px;
+    position: relative;
+    color: white;
+
+}
+
+.√◻️::before{
+    content: "√x";
+    font-size: 14px;
+    top: -95%;
+    left: 10px;
+    position: relative;
+    color: white;
+
+}
+
+.x²::before{
+    content: "x² DEC";
+    font-size: 14px;
+    top: -62%;
+    left: 15px;
+    position:absolute;
+    color: white;
+
+}
+
+
+
+
+
 
 .log{
 display: flex
