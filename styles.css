@@ -1,14 +1,14 @@
 .btn1 {
     border-radius: 32%;
     border: none;
-    width: 81px;
-    height: 81px;
+    width: 80px;
+    height: 43px;
     background-color: white;
     color: black;
     cursor:pointer;
     font-weight: bold;
-    font-size: 50px;
-    top:95px;
+    font-size: 23px;
+    top:46px;
     position: relative;
 
   
@@ -17,24 +17,24 @@
 .btn2 {
     border-radius: 32%;
     border: none;
-    width: 81px;
-    height: 81px;
+    width: 80px;
+    height: 43px;
     background-color: white;
     color: black;
     cursor:pointer;
     font-weight: bold;
-    font-size: 50px;
-    top:10px;
+    font-size: 23px;
+    top:46px;
     position: relative;
    
     
 }
 
 .btn3{
-    border-radius: 32%;
+    border-radius: 16%;
     border: none;
-    width: 81px;
-    height: 81px;
+    width: 80px;
+    height: 43px;
     background-color: white;
     color: black;
     cursor:pointer;
@@ -48,14 +48,14 @@
 .btn4{
     border-radius: 32%;
     border: none;
-    width: 81px;
-    height: 81px;
+    width: 80px;
+    height: 43px;
     background-color: white;
     color: black;
     cursor:pointer;
     font-weight: bold;
-    font-size: 50px;
-    top:10px;
+    font-size: 23px;
+    top:46px;
     position: relative;
   
 }
@@ -76,49 +76,51 @@
 }
 
 .btn6{
-    border-radius: 32%;
+    border-radius: 16%;
     border: none;
     width: 81px;
-    height: 81px;
+    height: 43px;
     background-color: white;
     color: black;
-    cursor:pointer;
+    cursor: pointer;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 23px;
     margin-top: 4px;
     position: relative;
-    top:10px;
+    top: 142px;
+    left: -336px;
 }
 
 .btn7{
-    border-radius: 32%;
+        border-radius: 16%;
     border: none;
-    width: 81px;
-    height: 81px;
+    width: 80px;
+    height: 43px;
     background-color: white;
     color: black;
-    cursor:pointer;
+    cursor: pointer;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 23px;
     margin-top: 4px;
-    top:10px;
+    top: 57px;
     position: relative;
-
+    left: 84px;
 }
 
 .btn8{
-    border-radius: 32%;
+       border-radius: 16%;
     border: none;
-    width: 81px;
-    height: 81px;
+    width: 80px;
+    height: 43px;
     background-color: white;
     color: black;
-    cursor:pointer;
+    cursor: pointer;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 23px;
     margin-top: 4px;
-    top:10px;
+    top: 58px;
     position: relative;
+    left: 85px;
 }
 
 .btn9{
@@ -137,48 +139,51 @@
 }
 
 .btn10{
-    border-radius: 32%;
+   border-radius: 16%;
     border: none;
-    width: 81px;
-    height: 81px;
+    width: 80px;
+    height: 43px;
     background-color: white;
     color: black;
-    cursor:pointer;
+    cursor: pointer;
     font-weight: bold;
-    font-size:50px;
+    font-size: 23px;
     margin-top: 4px;
-    top:10px;
+    top: 122px;
     position: relative;
+    left: -252px;
 }
 
 .btn11{
-    border-radius: 32%;
+    border-radius: 16%;
     border: none;
-    width: 81px;
-    height: 81px;
+    width: 80px;
+    height: 43px;
     background-color: white;
     color: black;
-    cursor:pointer;
+    cursor: pointer;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 23px;
     margin-top: 4px;
-    top:10px;
+    top: 123px;
     position: relative;
+    left: -252px;
 }
 
 .btn12{
-    border-radius: 32%;
+       border-radius: 16%;
     border: none;
-    width: 81px;
-    height: 81px;
+    width: 80px;
+    height: 43px;
     background-color: white;
     color: black;
-    cursor:pointer;
+    cursor: pointer;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 23px;
     margin-top: 4px;
-    top:10px;
+    top: 37px;
     position: relative;
+    left: 167px;
 }
 
 .btn13{
@@ -197,18 +202,19 @@
 }
 
 .btn14{
-    border-radius: 32%;
+   border-radius: 16%;
     border: none;
-    width: 81px;
-    height: 81px;
+    width: 80px;
+    height: 43px;
     background-color: white;
     color: black;
-    cursor:pointer;
+    cursor: pointer;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 23px;
     margin-top: 4px;
-    top:10px;
+    top: 102px;
     position: relative;
+    left: -168px;
 }
 
 .btn15{
@@ -227,34 +233,36 @@
 }
 
 .btn16{
-    border-radius: 32%;
+    border-radius: 16%;
     border: none;
-    width: 81px;
-    height: 81px;
+    width: 80px;
+    height: 43px;
     background-color: white;
     color: black;
-    cursor:pointer;
+    cursor: pointer;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 23px;
     margin-top: 4px;
+    top: 102px;
     position: relative;
-    top: 10px;
+    left: -170px;
 }
 
 .btn17{
    
-    border-radius: 32%;
+      border-radius: 16%;
     border: none;
-    width: 81px;
-    height: 81px;
+    width: 80px;
+    height: 43px;
     background-color: white;
     color: black;
-    cursor:pointer;
+    cursor: pointer;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 23px;
     margin-top: 4px;
-    top: 10px;
+    top: 17px;
     position: relative;
+    left: 165px;
 
 }
 
