@@ -576,7 +576,7 @@ display: flex;
     align-items: center;
     color: white;
     background: black;
-    top: 79px;
+    top: 80px;
 }
 
 .x²{
@@ -602,7 +602,7 @@ display: flex;
     align-items: center;
     color: white;
     background: black;
-    top: 35px;
+    top: 37px;
 }
 
 .logs{
@@ -630,4 +630,137 @@ display: flex;
     background: black;
     top:38px;
 }
+
+.coma{
+display: flex;
+    border-radius: 16px;
+    width: 80px;
+    height: 43px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: black;
+    top: 96px;
+}
+
+.hyp{
+display: flex;
+    border-radius: 16px;
+    width: 80px;
+    height: 43px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: black;
+    top: 54px;
+}
+
+.sin{
+    display: flex;
+    border-radius: 16px;
+    width: 80px;
+    height: 43px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: black;
+    top: 54px;
+}
+
+.cos{
+    display: flex;
+    border-radius: 16px;
+    width: 80px;
+    height: 43px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: black;
+    top: 54px;
+}
+
+.tan{
+display: flex;
+    border-radius: 16px;
+    width: 80px;
+    height: 43px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: black;
+    top: 54px;
+}
+
+.ENG{
+display: flex;
+    border-radius: 16px;
+    width: 80px;
+    height: 43px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: black;
+    
+}
+
+.W{
+display: flex;
+    border-radius: 16px;
+    width: 80px;
+    height: 43px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: black;
+    
+}
+
+.O{
+display: flex;
+    border-radius: 16px;
+    width: 80px;
+    height: 43px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: black;
+    
+}
+
+.S{
+display: flex;
+    border-radius: 16px;
+    width: 80px;
+    height: 43px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: black;
+    
+
+}
+
+.M+{
+display: flex;
+    border-radius: 16px;
+    width: 80px;
+    height: 43px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: black;
+    
+
+}
+
 
