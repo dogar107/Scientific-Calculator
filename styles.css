@@ -314,7 +314,7 @@ display: flex
     content: "-";
     font-size: 14px;
     top: -95%;
-    left: 10px;
+    left: 18px;
     position: relative;
     color: white;
 
@@ -339,6 +339,145 @@ display: flex
     color: white;
 
 }
+
+.logs::before{
+   content: "10^x";
+    font-size: 14px;
+    top: -62%;
+    left: 15px;
+    position:absolute;
+    color: white;         
+}
+
+.ln::before{
+content: "e";
+    font-size: 14px;
+    top: -62%;
+    left: 33px;
+    position:absolute;
+    color: white;  
+}
+
+.xs::before{
+content: "A";
+    font-size: 14px;
+    top: -62%;
+    left: 62px;
+    position:absolute;
+    color: white;  
+}
+
+.coma::before{
+content: "← B";
+    font-size: 14px;
+    top: -62%;
+    left: 15px;
+    position:absolute;
+    color: white;  
+}
+
+.btn10::before{
+content: "S-SUM";
+    font-size: 14px;
+    top: -62%;
+    left: 15px;
+    position:absolute;
+    color: white; 
+}
+
+.btn11::before{
+content: "S-VAR";
+    font-size: 14px;
+    top: -62%;
+    left: 15px;
+    position:absolute;
+    color: white;  
+}
+
+.btn5::before{
+    content: "OFF";
+    font-size: 12px;
+    top: -17px;
+    left: 21px;
+    position: absolute;
+    color: white;
+}
+
+.btn1::before{
+     content: "INS";
+    font-size: 12px;
+    top: -49%;
+    left: 24px;
+    position: absolute;
+    color: white;
+}
+
+.btn16::before{
+content: "%";
+    font-size: 14px;
+    top: -62%;
+    left: 30px;
+    position:absolute;
+    color: white;  
+}
+
+.btn19::before{
+content: "DRG ";
+    font-size: 14px;
+    top: -62%;
+    left: 21px;
+    position:absolute;
+    color: white;  
+}
+
+.btn17::before{
+content: "π";
+    font-size: 14px;
+    top: -62%;
+    left: 33px;
+    position:absolute;
+    color: white;  
+}
+
+.btn15::before{
+content: "Ran #";
+    font-size: 14px;
+    top: -62%;
+    left: 15px;
+    position:absolute;
+    color: white;  
+}
+
+.btn14::before{
+content: "Rnd";
+    font-size: 14px;
+    top: -62%;
+    left: 15px;
+    position:absolute;
+    color: white;  
+}
+
+.ENG::before{
+content: "←";
+    font-size: 14px;
+    top: -62%;
+    left: 15px;
+    position:absolute;
+    color: white; 
+}
+
+.S::before{
+content: "STO";
+    font-size: 14px;
+    top: -62%;
+    left: 22px;
+    position:absolute;
+    color: white; 
+}
+
+
+
+
 
 
 
@@ -605,6 +744,7 @@ width: 80px;
     top: -55px;
     left: 86px;
     position: relative;
+    font-size:23px;
 }
 
 .btn5{
@@ -624,6 +764,7 @@ width: 80px;
     top: -136px;
     position: relative;
     left: 274px;
+    font-size:23px;
 }
 
 .btn6{
@@ -633,6 +774,7 @@ width: 80px;
     position: relative;
     left: -104px;
     border-radius: 16px;
+    font-size:23px;
 }
 
 .btn7{
@@ -662,6 +804,7 @@ width: 80px;
     top: -278px;
     left: 276px;
     position: relative;
+    font-size:23px
 }
 
 .btn9{
@@ -671,6 +814,7 @@ width: 80px;
     top: -237px;
     position: relative;
     left: 181px;
+    font-size:23px;
 }
 
 .btn8{
@@ -690,6 +834,7 @@ width: 80px;
     top: -418px;
     left: 277px;
     position: relative;
+    font-size:23px;
 }
 
 .plus{
@@ -699,6 +844,7 @@ width: 80px;
     top: -376px;
     left: 181px;
     position: relative;
+    font-size: 23px;
 }
 
 .btn12{
@@ -717,6 +863,7 @@ width: 80px;
     top: -295px;
     left: -8px;
     position: relative;
+    font-size:23px;
 }
 
 .btn10{
@@ -726,6 +873,7 @@ width: 80px;
     top: -255px;
     position: relative;
     left: -104px;
+    font-size:23px;
 }
 
 .btn14{
@@ -735,6 +883,7 @@ width: 80px;
     top: -395px;
     left: -130%;
     position: relative;
+    font-size:23px;
 }
 
 .btn15{
@@ -744,6 +893,7 @@ width: 80px;
     height: 41px;
     border-radius: 16px;
     left: -7px;
+    font-size:23px;
 }
 
 .btn17{
@@ -753,6 +903,7 @@ width: 80px;
     top: -473px;
     left: 87px;
     position: relative;
+    font-size:23px;
 }
 
 .btn16{
@@ -762,6 +913,7 @@ width: 80px;
     top: -555px;
     position: relative;
     left: 276px;
+    font-size:23px;
 }
 
 .btn19{
@@ -771,6 +923,25 @@ width: 80px;
     border-radius: 16px;
     top: -514px;
     left: 180px;
+    font-size:23px;
+}
+
+.M::before{
+     content: "M- M";
+    font-size: 14px;
+    top: -58%;
+    left: 21px;
+    position: absolute;
+    color: white;
+}
+
+.O::before{
+     content: "X";
+    font-size: 14px;
+    top: -55%;
+    left: 60px;
+    position: absolute;
+    color: white;
 }
 
 
