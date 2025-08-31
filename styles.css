@@ -503,7 +503,7 @@ display: flex;
     border-radius: 16px;
     width: 80px;
     height: 43px;
-    top: 22px;
+    top: 23px;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -576,6 +576,7 @@ display: flex;
     align-items: center;
     color: white;
     background: black;
+    top: 79px;
 }
 
 .x²{
@@ -588,6 +589,7 @@ display: flex;
     align-items: center;
     color: white;
     background: black;
+    top: 39px;
 }
 
 .ln{
@@ -600,6 +602,7 @@ display: flex;
     align-items: center;
     color: white;
     background: black;
+    top: 35px;
 }
 
 .logs{
@@ -612,6 +615,7 @@ display: flex;
     align-items: center;
     color: white;
     background: black;
+    top: 37px;
 }
 
 .xs{
@@ -624,5 +628,6 @@ display: flex;
     align-items: center;
     color: white;
     background: black;
+    top:38px;
 }
 
