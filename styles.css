@@ -342,7 +342,7 @@ display: flex
 }
 
 .logs::before{
-   content: "10ᵡ";
+   content: "10ᵡ ";
     font-size: 14px;
     top: -62%;
     left: 25px;
