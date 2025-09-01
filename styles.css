@@ -35,7 +35,7 @@ background-color: red;
 border-radius: 15px;
 max-width: 500px;
 margin-left: 432px;
-margin-top: -8px;
+margin-top: 85px;
 max-height: 899px;
 }
 
@@ -43,6 +43,7 @@ body{
 display: flex;
 align-items: center;
 justify-items: center;
+background-color: black;
 
 
 
@@ -213,7 +214,7 @@ display: flex;
       content: "SHIFT";
     position: absolute;
     font-size: 14px;
-        top: 39%;
+        top: 54%;
     left: 475px;
 }
 
@@ -221,7 +222,7 @@ display: flex;
       content: "ALPHA";
     position: absolute;
     font-size: 14px;
-    top: 39%;
+    top: 54%;
         left: 569px;
 }
 
@@ -229,7 +230,7 @@ display: flex;
  content: "MODE SETUP";
     position: absolute;
     font-size: 14px;
-   top: 39%;
+   top: 54%;
     left: 730px;
 }
 
@@ -237,7 +238,7 @@ display: flex;
  content: "ON";
     position: absolute;
     font-size: 15px;
-    top: 39%;
+    top: 54%;
     left: 865px;
 }
 
@@ -344,7 +345,7 @@ display: flex
    content: "10^x";
     font-size: 14px;
     top: -62%;
-    left: 15px;
+    left: 19px;
     position:absolute;
     color: white;         
 }
@@ -452,7 +453,7 @@ content: "Ran #";
 content: "Rnd";
     font-size: 14px;
     top: -62%;
-    left: 15px;
+    left: 23px;
     position:absolute;
     color: white;  
 }
