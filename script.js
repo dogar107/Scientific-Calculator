@@ -18,5 +18,5 @@ display.value=display.value.slice(0,-1);
 output+=value;
 display.value=output;
 }
-})
-})
+});
+});
