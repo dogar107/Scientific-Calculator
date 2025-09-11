@@ -112,11 +112,6 @@ button.forEach(btn => {
       display.value=memory;
       }
       break;
-      case "x³":
-      let resultPower = Math.pow(output,3);
-      display.value=resultPower;
-      display.value=output;
-      break;
     
       
   }
