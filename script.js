@@ -134,6 +134,22 @@ button.forEach(btn => {
       display.value=results;
       output=results.toString()
       }
+      break;
+      case "log":
+      let lognum = parseFloat(output);
+      if(!isNaN(lognum)){
+      let results = Math.log10(lognum);
+      display.value=results;
+      output=results.toString()
+      }
+      break;
+      case "In":
+      let lnnum = parseFloat(output);
+      if(!isNaN(lnnum)){
+      let results = Math.log(lnnum);
+      display.value=results;
+      output=results.toString()
+      }
     
       
   }
