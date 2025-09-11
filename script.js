@@ -96,7 +96,7 @@ button.forEach(btn => {
       break;
       case "(":
       case ")":
-        output+="()"
+        output+=value;
         display.value = output;
         break;
   }
