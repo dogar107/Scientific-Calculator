@@ -87,12 +87,22 @@ button.forEach(btn => {
         output = "";
       }
       break
-      case "mode":
-      output="0";
-      display.value=output;
+      case "x⁻¹":
+      let numInv = parseFloat(output);
+        let resultPow = 1 / numInv;
+        display.value = resultPow;
+        output = resultPow.toString();
+      
+      break;
+      case "(":
+      case ")":
+        output+="()"
+        display.value = output;
+        break;
   }
-  });
 })
+  })
+
 
 
 
