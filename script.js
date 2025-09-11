@@ -3,6 +3,7 @@ const display = document.getElementById("display");
 
 let output = ""; 
 let latestAnswer = "";
+let memory = "0";
 
 button.forEach(btn => {
   btn.addEventListener("click", (e) => {
@@ -106,6 +107,12 @@ button.forEach(btn => {
       display.value=resultPowe;
       output=resultPowe.toString()
       break;
+      case "M+":
+      if(display.value){
+      output=memory =parseFloat(display.value);
+      //display.value=""
+      display.value=output;
+      }
       
   }
 })
