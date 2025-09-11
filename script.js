@@ -129,7 +129,7 @@ button.forEach(btn => {
       break;
       case "^":
       let numSq=parseFloat(output);
-      if(!NaN(numSq)){
+      if(!isNaN(numSq)){
       let results=Math.pow(numSq,numSq);
       display.value=results;
       output=results.toString()
