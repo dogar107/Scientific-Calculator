@@ -94,11 +94,19 @@ button.forEach(btn => {
         output = resultPow.toString();
       
       break;
-      case "(":
       case ")":
-        output+=value;
-        display.value = output;
-        break;
+      case "(":
+      output = output.replace(/(\d)(\()/g, '$1*(')
+      const resultbracket = eval(output);
+      display.value=output;
+      return resultbracket;
+      case "x²":
+      let nums= parseFloat(output);
+      let resultPowe = 2/ nums;
+      display.value=resultPowe;
+      output=resultPowe.toString()
+      break;
+      
   }
 })
   })
