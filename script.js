@@ -112,7 +112,6 @@ button.forEach(btn => {
         output = "";
       }
       break;
-      break;
       case "M+":
       if(display.value){
       memory =parseFloat(display.value);
@@ -120,6 +119,21 @@ button.forEach(btn => {
       display.value=memory;
       }
       break;
+      case "x³":
+      let numSquared=parseFloat(output);
+      if(!isNaN(numSquared)){
+      let results=Math.pow(numSquared,3);
+      display.value=results;
+      output=results.toString();
+      }
+      break;
+      case "^":
+      let numSq=parseFloat(output);
+      if(!NaN(numSq)){
+      let results=Math.pow(numSq,numSq);
+      display.value=results;
+      output=results.toString()
+      }
     
       
   }
