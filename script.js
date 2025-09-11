@@ -102,8 +102,16 @@ button.forEach(btn => {
       display.value=output;
       return resultbracket;
       case "x²":
-      let resultPowe = Math.pow(output,2);
-      display.value=resultPowe;
+      let numSquare = parseFloat(output);
+      if (!isNaN(numSquare)) {
+        let resultPowe = Math.pow(numSquare, 2);
+        display.value = resultPowe;
+        output = resultPowe.toString();
+      } else {
+        display.value = "Error";
+        output = "";
+      }
+      break;
       break;
       case "M+":
       if(display.value){
