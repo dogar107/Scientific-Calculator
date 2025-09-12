@@ -20,7 +20,7 @@
     flex-direction: row;
     background-color: aliceblue;
     color: black;
-    border: 7px solid white;
+    border: 10px groove aliceblue;
     width:464px;
     height:103px;
     margin-left: 7px;
@@ -36,7 +36,7 @@ border-radius: 15px;
 max-width: 500px;
 margin-left: 432px;
 margin-top: 85px;
-max-height: 899px;
+max-height: 924px;
 }
 
 body{
@@ -224,13 +224,7 @@ display: flex;
 }
 
 
-.CALC::before{
-     content: "SOLVE =";
-    position: absolute;
-    font-size: 14px;
-    top: -61%;
-    left: 14%;
-}
+
 
 .CALC{
     display: flex;
@@ -289,19 +283,11 @@ display: flex
     top: -60%;
     left: 32px;
     position: absolute;
-    color: white;
+    color: orange;
 
 }
 
-.log::before{
-    content: "-";
-    font-size: 14px;
-    top: -95%;
-    left: 18px;
-    position: relative;
-    color: white;
 
-}
 
 .√◻️::before{
     content: "√x";
@@ -309,17 +295,7 @@ display: flex
     top: -95%;
     left: 10px;
     position: relative;
-    color: white;
-
-}
-
-.x²::before{
-    content: "x² DEC";
-    font-size: 14px;
-    top: -62%;
-    left: 15px;
-    position:absolute;
-    color: white;
+    color: orange;
 
 }
 
@@ -329,7 +305,7 @@ display: flex
     top: -62%;
     left: 25px;
     position:absolute;
-    color: white;         
+    color: orange;         
 }
 
 .ln::before{
@@ -338,7 +314,7 @@ content: "e";
     top: -62%;
     left: 33px;
     position:absolute;
-    color: white;  
+    color: orange;  
 }
 
 .xs::before{
@@ -347,7 +323,7 @@ content: "A";
     top: -62%;
     left: 62px;
     position:absolute;
-    color: white;  
+    color: orange;  
 }
 
 .coma::before{
@@ -356,26 +332,10 @@ content: "← B";
     top: -62%;
     left: 15px;
     position:absolute;
-    color: white;  
+    color: orange;  
 }
 
-.btn10::before{
-content: "S-SUM";
-    font-size: 14px;
-    top: -62%;
-    left: 15px;
-    position:absolute;
-    color: white; 
-}
 
-.btn11::before{
-content: "S-VAR";
-    font-size: 14px;
-    top: -62%;
-    left: 15px;
-    position:absolute;
-    color: white;  
-}
 
 .btn5::before{
     content: "OFF";
@@ -383,7 +343,7 @@ content: "S-VAR";
     top: -17px;
     left: 21px;
     position: absolute;
-    color: white;
+    color: orange;
 }
 
 .btn1::before{
@@ -392,7 +352,7 @@ content: "S-VAR";
     top: -49%;
     left: 24px;
     position: absolute;
-    color: white;
+    color: orange;
 }
 
 .btn16::before{
@@ -401,7 +361,7 @@ content: "%";
     top: -62%;
     left: 30px;
     position:absolute;
-    color: white;  
+    color: orange;  
 }
 
 .btn19::before{
@@ -410,43 +370,15 @@ content: "DRG ";
     top: -62%;
     left: 21px;
     position:absolute;
-    color: white;  
+    color: orange;  
 }
-
-.btn17::before{
-content: "π";
-    font-size: 14px;
-    top: -62%;
-    left: 33px;
-    position:absolute;
-    color: white;  
-}
-
-.btn15::before{
-content: "Ran #";
-    font-size: 14px;
-    top: -62%;
-    left: 15px;
-    position:absolute;
-    color: white;  
-}
-
-.btn14::before{
-content: "Rnd";
-    font-size: 14px;
-    top: -62%;
-    left: 23px;
-    position:absolute;
-    color: white;  
-}
-
 .ENG::before{
 content: "←";
     font-size: 14px;
     top: -62%;
     left: 15px;
     position:absolute;
-    color: white; 
+    color: orange; 
 }
 
 .S::before{
@@ -455,7 +387,7 @@ content: "STO";
     top: -62%;
     left: 22px;
     position:absolute;
-    color: white; 
+    color: orange; 
 }
 
 
@@ -927,6 +859,7 @@ width: 80px;
     position: absolute;
     color: white;
 }
+
 
 
 

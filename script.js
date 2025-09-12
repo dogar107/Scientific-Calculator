@@ -40,6 +40,9 @@ button.forEach(btn => {
       display.value=latestAnswer;
       } else if(value==="REPLAY" ){
       display.value=latestAnswer;
+      }else if(value===","){
+      output=","
+      display.value=output;
     } else {
       output += value;
       display.value = output;
@@ -184,6 +187,13 @@ button.forEach(btn => {
     output=0;
     display.value=output;
     break;
+    case "MODE SETUP":
+    output="1:COMP 2:SD 3:REG"
+    display.value=output;
+    break;
+    
+
+     
 
     }
     
