@@ -20,8 +20,8 @@
     flex-direction: row;
     background-color: aliceblue;
     color: black;
-    border: none;
-    width:481px;
+    border: 7px solid white;
+    width:464px;
     height:103px;
     margin-left: 7px;
     margin-right: 4px;

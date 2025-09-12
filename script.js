@@ -36,6 +36,10 @@ button.forEach(btn => {
     display.value=output;
     } else if(value==="Ans" ){
       display.value=latestAnswer;
+    } else if(value==="RCL" ){
+      display.value=latestAnswer;
+      } else if(value==="REPLAY" ){
+      display.value=latestAnswer;
     } else {
       output += value;
       display.value = output;
