@@ -162,12 +162,20 @@ button.forEach(btn => {
       break;
       case "xʸ":
        let numSquareds=parseFloat(output);
-      if(!isNaN(numSquareds)){
-      let results=Math.pow(numSquareds,numSquareds);
-      display.value=results;
-      output=results.toString();
+      if (!isNaN(numSquareds)) {
+        let results = Math.pow(numSquareds, numSquareds);
+        display.value = results;
+        output = results.toString();
+      }
+     case "Abs":
+    let numAbs=parseFloat(output);
+    if (!isNaN(numAbs, )) {
+        let results = Math.abs(numAbs - output);
+        display.value = results;
+        output = results.toString();
+      
 }
-}
+    }
 })
   })
 
