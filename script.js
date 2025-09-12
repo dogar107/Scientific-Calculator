@@ -150,9 +150,24 @@ button.forEach(btn => {
       display.value=results;
       output=results.toString()
       }
-    
-      
-  }
+      break;
+      case "π":
+      let pieNum = parseFloat(output);
+      let results;
+      if (!isNaN(pieNum)) {
+      results = pieNum * Math.PI;
+      display.value = results;
+      output = results.toString();
+      }
+      break;
+      case "xʸ":
+       let numSquareds=parseFloat(output);
+      if(!isNaN(numSquareds)){
+      let results=Math.pow(numSquareds,numSquareds);
+      display.value=results;
+      output=results.toString();
+}
+}
 })
   })
 
