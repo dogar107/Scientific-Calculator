@@ -170,7 +170,7 @@ button.forEach(btn => {
       break;
      case "Abs":
     let numAbs=parseFloat(output);
-    if (!isNaN(numAbs )) {
+    if (!isNaN(numAbs)) {
         let results = Math.abs(numAbs);
         display.value = results;
         output = results.toString();
