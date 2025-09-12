@@ -93,8 +93,8 @@ button.forEach(btn => {
       }
       break
       case "x⁻¹":
-      let numInv = parseFloat(output);
-        let resultPow = 1 / numInv;
+      let numx = parseFloat(output);
+        let resultPow = 1 / numx;
         display.value = resultPow;
         output = resultPow.toString();
       
