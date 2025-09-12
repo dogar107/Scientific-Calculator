@@ -167,15 +167,23 @@ button.forEach(btn => {
         display.value = results;
         output = results.toString();
       }
+      break;
      case "Abs":
     let numAbs=parseFloat(output);
-    if (!isNaN(numAbs, )) {
-        let results = Math.abs(numAbs - output);
+    if (!isNaN(numAbs )) {
+        let results = Math.abs(numAbs);
         display.value = results;
         output = results.toString();
-      
-}
+      }
+      break;
+    case "ON":
+    output=0;
+    display.value=output;
+    break;
+
     }
+    
+
 })
   })
 
