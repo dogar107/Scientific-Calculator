@@ -252,15 +252,6 @@ display: flex;
     background: black;
 }
 
-.integral::before{
-    content: "d/dx = :";
-    font-size: 14px;
-    top: -63%;
-    left: 18px;
-    position: absolute;
-    color: white;
-
-}
 
 .x⁻¹{
 display: flex
@@ -848,7 +839,7 @@ width: 80px;
     top: -58%;
     left: 21px;
     position: absolute;
-    color: white;
+    color: orange;
 }
 
 .O::before{
@@ -857,8 +848,37 @@ width: 80px;
     top: -55%;
     left: 60px;
     position: absolute;
-    color: white;
+    color: orange;
 }
+
+.sin::before{
+content: "sin⁻1 D";
+     font-size: 11px;
+    top: -50%;
+    left: 39px;
+    position: absolute;
+    color: orange;
+}
+
+.cos::before{
+content: "cos⁻1 E";
+ font-size: 11px;
+    top: -50%;
+    left: 37px;
+    position: absolute;
+    color: orange;
+}
+
+.tan::before{
+content: "tan⁻1 F";
+ font-size: 11px;
+    top: -50%;
+    left: 40px;
+    position: absolute;
+    color: orange;
+}
+
+
 
 
 
