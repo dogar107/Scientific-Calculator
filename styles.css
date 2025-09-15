@@ -31,12 +31,12 @@
 }
 
 .calculator{
-background-color: gainsboro;
-border-radius: 15px;
-max-width: 500px;
-margin-left: 432px;
-margin-top: 85px;
-max-height: 924px;
+    border-radius: 15px;
+    width: 506px;
+    height: 919px;
+    margin: 50px auto;
+    transform: scale(0.8);
+    background-color: gainsboro;
 }
 
 body{
@@ -308,23 +308,9 @@ content: "e";
     color: orange;  
 }
 
-.xs::before{
-content: "A";
-    font-size: 14px;
-    top: -62%;
-    left: 62px;
-    position:absolute;
-    color: orange;  
-}
 
-.coma::before{
-content: "← B";
-    font-size: 14px;
-    top: -62%;
-    left: 15px;
-    position:absolute;
-    color: orange;  
-}
+
+
 
 
 
@@ -337,14 +323,6 @@ content: "← B";
     color: orange;
 }
 
-.btn1::before{
-     content: "INS";
-    font-size: 12px;
-    top: -49%;
-    left: 24px;
-    position: absolute;
-    color: orange;
-}
 
 .btn16::before{
 content: "%";
@@ -355,31 +333,10 @@ content: "%";
     color: orange;  
 }
 
-.btn19::before{
-content: "DRG ";
-    font-size: 14px;
-    top: -62%;
-    left: 21px;
-    position:absolute;
-    color: orange;  
-}
-.ENG::before{
-content: "←";
-    font-size: 14px;
-    top: -62%;
-    left: 15px;
-    position:absolute;
-    color: orange; 
-}
 
-.S::before{
-content: "STO";
-    font-size: 14px;
-    top: -62%;
-    left: 22px;
-    position:absolute;
-    color: orange; 
-}
+
+
+
 
 
 
@@ -833,23 +790,9 @@ width: 80px;
     font-size:23px;
 }
 
-.M::before{
-     content: "M- M";
-    font-size: 14px;
-    top: -58%;
-    left: 21px;
-    position: absolute;
-    color: orange;
-}
 
-.O::before{
-     content: "X";
-    font-size: 14px;
-    top: -55%;
-    left: 60px;
-    position: absolute;
-    color: orange;
-}
+
+
 
 .sin::before{
 content: "sin⁻1 D";

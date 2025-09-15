@@ -4,6 +4,7 @@ const display = document.getElementById("display");
 let output = ""; 
 let latestAnswer = "";
 let memory = 0;
+let shiftMode = false;
 
 button.forEach(btn => {
   btn.addEventListener("click", (e) => {
@@ -59,42 +60,6 @@ button.forEach(btn => {
     output=result.toString();
     display.value=output;
     break;
-    case "sin":
-      let degree = parseFloat(output);
-      if (!isNaN(degree)) {
-        let radians = degree * (Math.PI / 180);
-        let resultSin = Math.sin(radians);
-        display.value = resultSin;
-        output = resultSin.toString();
-      } else {
-        display.value = "Error";
-        output = "";
-      }
-      break;
-       case "cos":
-      let degree1 = parseFloat(output);
-      if (!isNaN(degree1)) {
-        let radians = degree1 * (Math.PI / 180);
-        let resultCos = Math.cos(radians);
-        display.value = resultCos;
-        output = resultCos.toString();
-      } else {
-        display.value = "Error";
-        output = "";
-      }
-      break
-       case "tan":
-      let degree2 = parseFloat(output);
-      if (!isNaN(degree2)) {
-        let radians = degree2 * (Math.PI / 180);
-        let resultTan = Math.tan(radians);
-        display.value = resultTan;
-        output = resultTan.toString();
-      } else {
-        display.value = "Error";
-        output = "";
-      }
-      break
       case "x⁻¹":
       let numx = parseFloat(output);
         let resultPow = 1 / numx;
@@ -150,14 +115,6 @@ button.forEach(btn => {
       output=results.toString()
       }
       break;
-      case "In":
-      let lnnum = parseFloat(output);
-      if(!isNaN(lnnum)){
-      let results = Math.log(lnnum);
-      display.value=results;
-      output=results.toString()
-      }
-      break;
       case "π":
       let pieNum = parseFloat(output);
       let results;
@@ -191,15 +148,69 @@ button.forEach(btn => {
     output="1:COMP 2:SD 3:REG"
     display.value=output;
     break;
-    
+  case "SHIFT":
+    shiftMode = !shiftMode;
+    break;
 
-     
-
+  case "sin":
+    if (shiftMode) {
+      display.value = Math.asin(parseFloat(display.value)) * 180 / Math.PI;
+      shiftMode = false;
+    } else {
+      display.value = Math.sin(parseFloat(display.value) * Math.PI / 180);
     }
-    
+    break;
 
-})
-  })
+  case "cos":
+    if (shiftMode) {
+      display.value = Math.acos(parseFloat(display.value)) * 180 / Math.PI;
+      shiftMode = false;
+    } else {
+      display.value = Math.cos(parseFloat(display.value) * Math.PI / 180);
+    }
+    break;
+
+  case "tan":
+    if (shiftMode) {
+      display.value = Math.atan(parseFloat(display.value)) * 180 / Math.PI;
+      shiftMode = false;
+    } else {
+      display.value = Math.tan(parseFloat(display.value) * Math.PI / 180);
+    }
+    break;
+    case "In":
+      if (shiftMode) {
+        let num = parseFloat(display.value);
+        if (!isNaN(num)) {
+          let result = Math.exp(num); 
+          display.value = result;
+          output = result.toString();
+        }
+        shiftMode = false;
+      } else {
+        let lnnum = parseFloat(output);
+        if (!isNaN(lnnum)) {
+          let results = Math.log(lnnum);
+          display.value = results;
+          output = results.toString();
+        }
+      }
+      break;
+    case "10ˣ":
+      let tenExpNum = parseFloat(output);
+      if (!isNaN(tenExpNum)) {
+        let result = Math.pow(10, tenExpNum);
+        display.value = result;
+        output = result.toString();
+      }
+      break;
+    }
+  });
+});
+
+  
+
+
 
 
 
