@@ -107,14 +107,6 @@ button.forEach(btn => {
       output=results.toString()
       }
       break;
-      case "log":
-      let lognum = parseFloat(output);
-      if(!isNaN(lognum)){
-      let results = Math.log10(lognum);
-      display.value=results;
-      output=results.toString()
-      }
-      break;
       case "π":
       let pieNum = parseFloat(output);
       let results;
@@ -196,16 +188,26 @@ button.forEach(btn => {
         }
       }
       break;
-    case "10ˣ":
+    case "log":
       let tenExpNum = parseFloat(output);
       if (!isNaN(tenExpNum)) {
         let result = Math.pow(10, tenExpNum);
         display.value = result;
         output = result.toString();
+        shiftMode = false;
+      }else{
+      let lognum = parseFloat(output);
+      if(!isNaN(lognum)){
+      let results = Math.log10(lognum);
+      display.value=results;
+      output=results.toString()
       }
-      break;
     }
-  });
+      break;
+    case "x"
+    
+  };
+})
 });
 
   
