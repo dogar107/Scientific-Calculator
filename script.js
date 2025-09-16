@@ -43,6 +43,8 @@ button.forEach(btn => {
       }else if(value===","){
       output=","
       display.value=output;
+      }else if(value==="M+"){
+      display.value=latestAnswer;
     } else {
       output += value;
       display.value = output;
@@ -83,13 +85,6 @@ button.forEach(btn => {
         output = "";
       }
       break;
-      case "M+":
-      if(display.value){
-      memory =parseFloat(display.value);
-      display.value=""
-      display.value=memory;
-      }
-      break;
       case "x³":
       let numSquared=parseFloat(output);
       if(!isNaN(numSquared)){
@@ -108,7 +103,7 @@ button.forEach(btn => {
       break;
       case "π":
       let pieNum = parseFloat(output);
-      let results;
+      let results="";
       if (!isNaN(pieNum)) {
       results = pieNum * Math.PI;
       display.value = results;
@@ -202,12 +197,18 @@ button.forEach(btn => {
     }
   }
   break;
-      case "Ans":
+      case "AC":
       if(shiftMode){
       output="";
       display.value=output;
       shiftMode=false;
       }
+      case "ALPHA":
+      alphamode=!alphamode
+      break;
+      case "sin":
+      let asin=parseFloat(output);
+      
     }
   })
   })

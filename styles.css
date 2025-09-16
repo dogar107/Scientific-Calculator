@@ -45,9 +45,6 @@ align-items: center;
 justify-items: center;
 background-color: black;
 
-
-
-
 }
 
 .btn1:hover{
@@ -156,8 +153,7 @@ display: flex;
 }
 
 .alpha{
-    display: flex
-;
+    display: flex;
     border-radius: 84%;
     width: 80px;
     height: 56px;
@@ -254,8 +250,7 @@ display: flex;
 
 
 .x⁻¹{
-display: flex
-;
+display: flex;
     border-radius: 16px;
     width: 80px;
     height: 43px;
@@ -269,19 +264,6 @@ display: flex
 }
 
 
-
-
-
-.√◻️::before{
-    content: "√x";
-    font-size: 14px;
-    top: -95%;
-    left: 10px;
-    position: relative;
-    color: orange;
-
-}
-
 .logs::before{
    content: "10ᵡ ";
     font-size: 14px;
@@ -292,20 +274,13 @@ display: flex
 }
 
 .ln::before{
-content: "e";
+content: "eˣ e";
     font-size: 14px;
     top: -62%;
     left: 33px;
     position:absolute;
     color: orange;  
 }
-
-
-
-
-
-
-
 .btn5::before{
     content: "OFF";
     font-size: 12px;
