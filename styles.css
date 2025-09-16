@@ -20,7 +20,7 @@
     flex-direction: row;
     background-color: aliceblue;
     color: black;
-    border: 10px groove aliceblue;
+    border: 14px groove aliceblue;
     width:464px;
     height:103px;
     margin-left: 7px;
@@ -35,7 +35,7 @@
     width: 506px;
     height: 919px;
     margin: 50px auto;
-    transform: scale(0.8);
+    transform: scale(0.5);
     background-color: gainsboro;
 }
 

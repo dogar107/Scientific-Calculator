@@ -208,8 +208,6 @@ button.forEach(btn => {
       display.value=output;
       shiftMode=false;
       }
-   
-
     }
   })
   })
