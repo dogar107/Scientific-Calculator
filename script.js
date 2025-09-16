@@ -206,8 +206,13 @@ button.forEach(btn => {
       case "ALPHA":
       alphamode=!alphamode
       break;
-      case "sin":
-      let asin=parseFloat(output);
+     case "M+":
+     if(alphamode){
+      let result;
+     result=memory-=parseFloat(output);
+     display.value=result;
+
+     }
       
     }
   })
