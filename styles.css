@@ -274,7 +274,7 @@ display: flex;
 }
 
 .ln::before{
-content: "eˣ e";
+content: "eˣ";
     font-size: 14px;
     top: -62%;
     left: 33px;
@@ -283,30 +283,12 @@ content: "eˣ e";
 }
 .btn5::before{
     content: "OFF";
-    font-size: 12px;
+    font-size: 16px;
     top: -17px;
     left: 21px;
     position: absolute;
     color: orange;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .log{
 display: flex
 ;
@@ -750,12 +732,8 @@ width: 80px;
     font-size:23px;
 }
 
-
-
-
-
 .sin::before{
-content: "sin⁻1 D";
+content: "sin⁻1 ";
      font-size: 11px;
     top: -50%;
     left: 39px;
@@ -764,7 +742,7 @@ content: "sin⁻1 D";
 }
 
 .cos::before{
-content: "cos⁻1 E";
+content: "cos⁻1 ";
  font-size: 11px;
     top: -50%;
     left: 37px;
@@ -773,13 +751,59 @@ content: "cos⁻1 E";
 }
 
 .tan::before{
-content: "tan⁻1 F";
+content: "tan⁻1 ";
  font-size: 11px;
     top: -50%;
     left: 40px;
     position: absolute;
     color: orange;
 }
+
+.hyp::before{
+content: "3√";
+ font-size: 11px;
+    top: -50%;
+    left: 32px;
+    position: absolute;
+    color: red;
+}
+
+.btn16::before{
+content: "%";
+ font-size: 16px;
+    top: -58%;
+    left: 32px;
+    position: absolute;
+    color: red;
+}
+
+.√::before{
+content: "2√";
+ font-size: 16px;
+    top: -50%;
+    left: 32px;
+    position: absolute;
+    color: red;
+}
+
+.log::before{
+content: "e";
+ font-size: 16px;
+    top: -50%;
+    left: 32px;
+    position: absolute;
+    color: red;
+}
+
+.M::before{
+content: "M-";
+ font-size: 16px;
+    top: -50%;
+    left: 32px;
+    position: absolute;
+    color: red;
+}
+
 
 
 
