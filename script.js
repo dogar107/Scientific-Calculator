@@ -9,7 +9,6 @@ let shiftMode = false;
 button.forEach(btn => {
   btn.addEventListener("click", (e) => {
     let value = e.target.innerText;
-
     if (value === "=") {
       try {
         output = eval(output);
@@ -189,26 +188,49 @@ button.forEach(btn => {
       }
       break;
     case "log":
-      let tenExpNum = parseFloat(output);
-      if (!isNaN(tenExpNum)) {
-        let result = Math.pow(10, tenExpNum);
-        display.value = result;
-        output = result.toString();
-        shiftMode = false;
-      }else{
-      let lognum = parseFloat(output);
-      if(!isNaN(lognum)){
-      let results = Math.log10(lognum);
-      display.value=results;
-      output=results.toString()
-      }
+  let logNum = parseFloat(output);
+  if (!isNaN(logNum)) {
+    if (shiftMode) {
+      let result = Math.pow(10, logNum); 
+      display.value = result;
+      output = result.toString();
+      shiftMode = false;
+    } else {
+      let result = Math.log10(logNum); 
+      display.value = result;
+      output = result.toString();
     }
-      break;
-    case "x"
-    
-  };
-})
-});
+  }
+  break;
+  case "x⁻¹":
+  if (shiftMode) {
+    let x = parseFloat(output);
+    if (x === 0) {
+      display.value = "Error"; 
+      output = "Error";
+    } else {
+      let res = 1 / x;
+      display.value = res;
+      output = res.toString();
+    }
+  }
+  break;
+
+
+
+
+
+      case "Ans":
+      if(shiftMode){
+      output="";
+      display.value=output;
+      shiftMode=false;
+      }
+   
+
+    }
+  })
+  })
 
   
 

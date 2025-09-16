@@ -268,15 +268,7 @@ display: flex
     left: 95px;
 }
 
-.x⁻¹::before{
-    content: "x!";
-    font-size: 14px;
-    top: -60%;
-    left: 32px;
-    position: absolute;
-    color: orange;
 
-}
 
 
 
@@ -324,14 +316,7 @@ content: "e";
 }
 
 
-.btn16::before{
-content: "%";
-    font-size: 14px;
-    top: -62%;
-    left: 30px;
-    position:absolute;
-    color: orange;  
-}
+
 
 
 
