@@ -37,6 +37,7 @@
     margin: 50px auto;
     transform: scale(0.5);
     background-color: gainsboro;
+    top :-157px;
 }
 
 body{
@@ -44,6 +45,7 @@ display: flex;
 align-items: center;
 justify-items: center;
 background-color: black;
+overflow: hidden;
 
 }
 
@@ -137,7 +139,7 @@ background-color: green;
     border: none;
     align-items: center;
     justify-content: center;
-    color:orange;
+    color:white;
 }
 
 .shift{
@@ -161,7 +163,7 @@ display: flex;
     border: none;
     align-items: center;
     justify-content: center;
-    color:orange;
+    color:red;
 }
 
 .ON{
@@ -173,7 +175,7 @@ display: flex;
     border: none;
     align-items: center;
     justify-content: center;
-    color:orange;
+    color:white;
     font-size: 10px;
 }
 
@@ -795,14 +797,7 @@ content: "e";
     color: red;
 }
 
-.M::before{
-content: "M-";
- font-size: 16px;
-    top: -50%;
-    left: 32px;
-    position: absolute;
-    color: red;
-}
+
 
 
 

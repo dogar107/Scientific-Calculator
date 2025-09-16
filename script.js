@@ -5,6 +5,7 @@ let output = "";
 let latestAnswer = "";
 let memory = 0;
 let shiftMode = false;
+let alphaMode = false;
 
 button.forEach(btn => {
   btn.addEventListener("click", (e) => {
@@ -85,28 +86,13 @@ button.forEach(btn => {
         output = "";
       }
       break;
-      case "x³":
-      let numSquared=parseFloat(output);
-      if(!isNaN(numSquared)){
-      let results=Math.pow(numSquared,3);
-      display.value=results;
-      output=results.toString();
-      }
-      break;
-      case "^":
-      let numSq=parseFloat(output);
-      if(!isNaN(numSq)){
-      let results=Math.pow(numSq,numSq);
-      display.value=results;
-      output=results.toString()
-      }
-      break;
+      
       case "π":
       let pieNum = parseFloat(output);
       let results="";
       if (!isNaN(pieNum)) {
       results = pieNum * Math.PI;
-      display.value = results;
+      display.value += results;
       output = results.toString();
       }
       break;
@@ -204,19 +190,51 @@ button.forEach(btn => {
       shiftMode=false;
       }
       case "ALPHA":
-      alphamode=!alphamode
+      alphaMode = !alphaMode;
       break;
-     case "M+":
-     if(alphamode){
-      let result;
-     result=memory-=parseFloat(output);
-     display.value=result;
-
-     }
-      
+      case "√":
+      if(alphaMode){
+    let num=parseFloat(output);
+    const result=Math.sqrt(2,num);
+    display.value=result;
+    output=result.toString();
+    display.value=output;
+    alphaMode=false;
     }
+    break;
+    case "x³":
+    let numSquared=parseFloat(output);
+    if(alphaMode){
+    const result=Math.cbrt(numSquared);
+    display.value=result;
+    output=result.toString();
+    display.value=output;
+    alphaMode=false;
+    }else{
+      let results=Math.pow(numSquared,3);
+      display.value=results;
+      output=results.toString();
+    }
+    break;
+    case "^":
+      let numSq = parseFloat(output);
+      if (alphaMode) {
+      const results56=numSq * Math.E;
+      display.value = results56;
+      output = results56.toString();
+      alphaMode=false;
+    }else{
+      let results=Math.pow(numSq);
+      display.value=results;
+      output=results.toString()
+    }
+    break;
+  
+  }
+})
   })
-  })
+
+ 
 
   
 
