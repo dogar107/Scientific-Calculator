@@ -61,7 +61,7 @@ button.forEach(btn => {
     break;
       case "x⁻¹":
       let numx = parseFloat(output);
-        let resultPow = 1 / numx;
+        let resultPow = Math.pow(numx,-1);
         display.value = resultPow;
         output = resultPow.toString();
       
@@ -202,24 +202,6 @@ button.forEach(btn => {
     }
   }
   break;
-  case "x⁻¹":
-  if (shiftMode) {
-    let x = parseFloat(output);
-    if (x === 0) {
-      display.value = "Error"; 
-      output = "Error";
-    } else {
-      let res = 1 / x;
-      display.value = res;
-      output = res.toString();
-    }
-  }
-  break;
-
-
-
-
-
       case "Ans":
       if(shiftMode){
       output="";
