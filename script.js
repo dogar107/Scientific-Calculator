@@ -234,7 +234,7 @@ button.forEach(btn => {
       display.value = results56.toFixed(6);
       output = results56.toString();
       alphaMode=false;
-      }else if(isNaN(numSq)){
+      }else if(alphaMode){
       result=Math.E;
       display.value=result;
     }else{
