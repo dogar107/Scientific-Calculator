@@ -6,21 +6,11 @@ let latestAnswer = "";
 let memory = 0;
 let shiftMode = false;
 let alphaMode = false;
-let output1="";
 
 button.forEach(btn => {
   btn.addEventListener("click", (e) => {
     let value = e.target.innerText;
-    if(value==="="){
-     try {
-        output = eval(output);
-        display.value = output;
-      } catch {
-        display.value = "Error";
-        output = "";
-        
-      }
-    } else if (value === "AC") {
+      if (value === "AC") {
       latestAnswer=output;
       output = "";
       display.value = output;
@@ -87,6 +77,9 @@ button.forEach(btn => {
   let results=pieNum * Math.PI;
   display.value=results.toFixed(3);
   output=results.toString();
+  }else{
+  result=Math.PI
+  display.value=result;
   }
   break;
 
@@ -108,13 +101,8 @@ button.forEach(btn => {
       }
       break;
     case "ON":
-    if(output!=""){
     output=0;
     display.value=output;
-    }else if(!isNaN(output)){
-    output="";
-    display.value=output;
-    }
 
     break;
     case "MODE SETUP":
@@ -246,6 +234,9 @@ button.forEach(btn => {
       display.value = results56.toFixed(6);
       output = results56.toString();
       alphaMode=false;
+      }else if(value==="^" && alphaMode){
+      result=Math.E;
+      display.value=result;
     }else{
       let results=Math.pow(numSq);
       display.value=results;
@@ -259,6 +250,15 @@ button.forEach(btn => {
     percentResult = percentage / 100;
     display.value = percentResult;
     output = percentResult.toString();
+  }else{
+  try {
+        output = eval(output);
+        display.value = output;
+      } catch {
+        display.value = "Error";
+        output = "";
+        
+      }
   }
     }
     })
