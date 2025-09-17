@@ -10,22 +10,8 @@ let alphaMode = false;
 button.forEach(btn => {
   btn.addEventListener("click", (e) => {
     let value = e.target.innerText;
-    if (value === "=") {
-      try {
-        output = eval(output);
-        display.value = output;
-      } catch {
-        display.value = "Error";
-        output = "";
-      }
-        
-      }else{
-       if(alphaMode){
-    let num=output;
-    let total=output;
-    const percentage=(num / total)*100;
-    display.value=percentage;
-    } else if (value === "AC") {
+   
+     if (value === "AC") {
       latestAnswer=output;
       output = "";
       display.value = output;
@@ -61,13 +47,6 @@ button.forEach(btn => {
     output = "-";
     display.value=output;
     break;
-    case "√":
-    let num=parseFloat(output);
-    const result=Math.sqrt(num);
-    display.value=result;
-    output=result.toString();
-    display.value=output;
-    break;
       case "x⁻¹":
       let numx = parseFloat(output);
         let resultPow = Math.pow(numx,-1);
@@ -93,17 +72,16 @@ button.forEach(btn => {
       }
       break;
       
-      case "π":
-      let results="";
-      if (!isNaN(output)) {
-      results = output * Math.PI;
-      }else{
-        results = Math.PI;
-      }
-      
-     display.value = results;
-     output = results.toString();
-      break;
+  case "π":
+  let pieNum=parseFloat(output);
+  if(!isNaN(pieNum)){
+  let results=pieNum * Math.PI;
+  display.value=results.toFixed(3);
+  output=results.toString();
+  }
+  break;
+
+
       case "xʸ":
        let numSquareds=parseFloat(output);
       if (!isNaN(numSquareds)) {
@@ -163,7 +141,7 @@ button.forEach(btn => {
         let num = parseFloat(display.value);
         if (!isNaN(num)) {
           let result = Math.exp(num); 
-          display.value = result;
+          display.value = result.toFixed(3);
           output = result.toString();
         }
         shiftMode = false;
@@ -171,7 +149,7 @@ button.forEach(btn => {
         let lnnum = parseFloat(output);
         if (!isNaN(lnnum)) {
           let results = Math.log(lnnum);
-          display.value = results;
+          display.value = results.toFixed(6);
           output = results.toString();
         }
       }
@@ -181,12 +159,12 @@ button.forEach(btn => {
   if (!isNaN(logNum)) {
     if (shiftMode) {
       let result = Math.pow(10, logNum); 
-      display.value = result.toFixed(3);
+      display.value = result;
       output = result.toString();
       shiftMode = false;
     } else {
       let result = Math.log10(logNum); 
-      display.value = result;
+      display.value = result.toFixed(6);
       output = result.toString();
     }
   }
@@ -201,13 +179,16 @@ button.forEach(btn => {
       alphaMode = !alphaMode;
       break;
       case "√":
-      if(alphaMode){
-    let num=parseFloat(output);
-    const result=Math.sqrt(2,num);
-    display.value=result;
-    output=result.toString();
-    display.value=output;
-    alphaMode=false;
+      let num=parseFloat(output);
+      if (alphaMode) {
+      let result=Math.sqrt(2,num);
+      display.value=result.toFixed(6);
+      output=result.toString();
+      alphaMode=false;
+    } else {
+      let result=Math.sqrt(num);
+      display.value=result.toFixed(6);
+      output=result.toString();
     }
     break;
     case "x³":
@@ -237,12 +218,30 @@ button.forEach(btn => {
       output=results.toString()
     }
     break;
+    case "=":
+    if(alphaMode){
+    let percentage=parseFloat(output);
+    let percentResult = "";
+    percentResult = percentage / 100;
+    display.value = percentResult;
+    output = percentResult.toString();
+  }else{
+    try {
+        output = eval(output);
+        display.value = output;
+      } catch {
+        display.value = "Error";
+        output = "";
+        
+      }
+    }
+  break;
+    }
+    })
    
-  
-  }
-}
 })
-  })
+
+
 
  
 
