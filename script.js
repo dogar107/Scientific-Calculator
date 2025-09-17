@@ -96,7 +96,7 @@ button.forEach(btn => {
     let numAbs=parseFloat(output);
     if (!isNaN(numAbs)) {
         let results = Math.abs(numAbs);
-        display.value = results;
+        display.value -= results;
         output = results.toString();
       }
       break;
