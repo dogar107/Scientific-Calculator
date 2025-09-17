@@ -234,9 +234,6 @@ button.forEach(btn => {
       display.value = results56.toFixed(6);
       output = results56.toString();
       alphaMode=false;
-      }else if(alphaMode){
-      result=Math.E;
-      display.value=result;
     }else{
       let results=Math.pow(numSq);
       display.value=results;
