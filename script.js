@@ -94,13 +94,15 @@ button.forEach(btn => {
       break;
       
       case "π":
-      let pieNum = parseFloat(output);
       let results="";
-      if (!isNaN(pieNum)) {
-      results = pieNum * Math.PI;
-      display.value = results;
-      output = results.toString();
+      if (!isNaN(output)) {
+      results = output * Math.PI;
+      }else{
+        results = Math.PI;
       }
+      
+     display.value = results;
+     output = results.toString();
       break;
       case "xʸ":
        let numSquareds=parseFloat(output);
