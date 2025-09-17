@@ -17,8 +17,14 @@ button.forEach(btn => {
       } catch {
         display.value = "Error";
         output = "";
-        
       }
+        
+      }else{
+       if(alphaMode){
+    let num=output;
+    let total=output;
+    const percentage=(num / total)*100;
+    display.value=percentage;
     } else if (value === "AC") {
       latestAnswer=output;
       output = "";
@@ -92,7 +98,7 @@ button.forEach(btn => {
       let results="";
       if (!isNaN(pieNum)) {
       results = pieNum * Math.PI;
-      display.value += results;
+      display.value = results;
       output = results.toString();
       }
       break;
@@ -173,7 +179,7 @@ button.forEach(btn => {
   if (!isNaN(logNum)) {
     if (shiftMode) {
       let result = Math.pow(10, logNum); 
-      display.value = result;
+      display.value = result.toFixed(3);
       output = result.toString();
       shiftMode = false;
     } else {
@@ -229,8 +235,10 @@ button.forEach(btn => {
       output=results.toString()
     }
     break;
+   
   
   }
+}
 })
   })
 
