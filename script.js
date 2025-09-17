@@ -10,8 +10,16 @@ let alphaMode = false;
 button.forEach(btn => {
   btn.addEventListener("click", (e) => {
     let value = e.target.innerText;
-   
-     if (value === "AC") {
+    if(value==="="){
+     try {
+        output = eval(output);
+        display.value = output;
+      } catch {
+        display.value = "Error";
+        output = "";
+        
+      }
+    } else if (value === "AC") {
       latestAnswer=output;
       output = "";
       display.value = output;
@@ -99,8 +107,14 @@ button.forEach(btn => {
       }
       break;
     case "ON":
+    if(output!=""){
     output=0;
     display.value=output;
+    }else if(!isNaN(output)){
+    output="";
+    display.value=output;
+    }
+
     break;
     case "MODE SETUP":
     output="1:COMP 2:SD 3:REG"
@@ -113,34 +127,38 @@ button.forEach(btn => {
   case "sin":
     let sin = parseFloat(output);
     if (shiftMode) {
-      let radian=output *
-      let result=Math.asin(sin);
-      display.value=result.toFixed(3);
+      let result=Math.asin(sin * 180 / Math.PI);
+      display.value=result.toFixed(6);
       output=result.toString(); 
       shiftMode = false;
     } else {
-       let result=Math.sin(sin);
-      display.value=result.toFixed(3);
+        let result=Math.sin(sin * Math.PI / 180)
+      display.value=result.toFixed(6);
       output=result.toString(); 
-      shiftMode = false;
     }
     break;
 
   case "cos":
+    let cos = parseFloat(output);
     if (shiftMode) {
       display.value = Math.acos(parseFloat(display.value)) * 180 / Math.PI;
       shiftMode = false;
     } else {
-      display.value = Math.cos(parseFloat(display.value) * Math.PI / 180);
+      let result=Math.cos(cos * Math.PI / 180)
+      display.value=result.toFixed(6);
+      output=result.toString(); 
     }
     break;
 
   case "tan":
+    let tan = parseFloat(output);
     if (shiftMode) {
       display.value = Math.atan(parseFloat(display.value)) * 180 / Math.PI;
       shiftMode = false;
     } else {
-      display.value = Math.tan(parseFloat(display.value) * Math.PI / 180);
+      let result=Math.tan(tan * Math.PI / 180)
+      display.value=result.toFixed(6);
+      output=result.toString(); 
     }
     break;
     case "In":
@@ -232,21 +250,12 @@ button.forEach(btn => {
     percentResult = percentage / 100;
     display.value = percentResult;
     output = percentResult.toString();
-  }else{
-    try {
-        output = eval(output);
-        display.value = output;
-      } catch {
-        display.value = "Error";
-        output = "";
-        
-      }
-    }
-  break;
+  }
     }
     })
+    })
    
-})
+
 
 
 
