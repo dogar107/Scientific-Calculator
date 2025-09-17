@@ -6,6 +6,7 @@ let latestAnswer = "";
 let memory = 0;
 let shiftMode = false;
 let alphaMode = false;
+let output1="";
 
 button.forEach(btn => {
   btn.addEventListener("click", (e) => {
@@ -127,21 +128,26 @@ button.forEach(btn => {
   case "sin":
     let sin = parseFloat(output);
     if (shiftMode) {
-      let result=Math.asin(sin * 180 / Math.PI);
-      display.value=result.toFixed(6);
-      output=result.toString(); 
+      let radians=Math.asin(sin);
+      let degree=radians * (180/Math.PI);
+      display.value=degree;
+      output=degree.toString(); 
       shiftMode = false;
     } else {
-        let result=Math.sin(sin * Math.PI / 180)
+      let result=Math.sin(sin * Math.PI / 180)
       display.value=result.toFixed(6);
       output=result.toString(); 
     }
+  
     break;
 
   case "cos":
     let cos = parseFloat(output);
     if (shiftMode) {
-      display.value = Math.acos(parseFloat(display.value)) * 180 / Math.PI;
+      let radians=Math.acos(cos);
+      let degree=radians * (180/Math.PI);
+      display.value=degree;
+      output=degree.toString();
       shiftMode = false;
     } else {
       let result=Math.cos(cos * Math.PI / 180)
@@ -153,7 +159,10 @@ button.forEach(btn => {
   case "tan":
     let tan = parseFloat(output);
     if (shiftMode) {
-      display.value = Math.atan(parseFloat(display.value)) * 180 / Math.PI;
+       let radians=Math.atan(tan);
+      let degree=radians * (180/Math.PI);
+      display.value=degree;
+      output=degree.toString();
       shiftMode = false;
     } else {
       let result=Math.tan(tan * Math.PI / 180)
@@ -234,7 +243,7 @@ button.forEach(btn => {
       let numSq = parseFloat(output);
       if (alphaMode) {
       const results56=numSq * Math.E;
-      display.value = results56;
+      display.value = results56.toFixed(6);
       output = results56.toString();
       alphaMode=false;
     }else{
