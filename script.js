@@ -113,12 +113,16 @@ button.forEach(btn => {
   case "sin":
     let sin = parseFloat(output);
     if (shiftMode) {
-      let result=Math.sin * sin;
-      display.value=result;
+      let radian=output *
+      let result=Math.asin(sin);
+      display.value=result.toFixed(3);
       output=result.toString(); 
       shiftMode = false;
     } else {
-      display.value = Math.sin(parseFloat(display.value) * Math.PI / 180);
+       let result=Math.sin(sin);
+      display.value=result.toFixed(3);
+      output=result.toString(); 
+      shiftMode = false;
     }
     break;
 
