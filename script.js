@@ -10,7 +10,10 @@ let alphaMode = false;
 button.forEach(btn => {
   btn.addEventListener("click", (e) => {
     let value = e.target.innerText;
-      if (value === "AC") {
+    if(value==="="){
+    output=eval(output);
+    display.value=output;
+    } else if (value === "AC") {
       latestAnswer=output;
       output = "";
       display.value = output;
@@ -30,13 +33,12 @@ button.forEach(btn => {
       display.value=latestAnswer;
     } else if(value==="RCL" ){
       display.value=latestAnswer;
+
       } else if(value==="REPLAY" ){
-      display.value=latestAnswer;
-      }else if(value===","){
-      output=","
-      display.value=output;
+        display.value=latestAnswer;
       }else if(value==="M+"){
-      display.value=latestAnswer;
+      memory+=parseFloat(output);
+      display.value=memory;
     } else {
       output += value;
       display.value = output;
@@ -55,10 +57,9 @@ button.forEach(btn => {
       break;
       case ")":
       case "(":
-      output = output.replace(/(\d)(\()/g, '$1*(')
-      const resultbracket = eval(output);
+      output = output.replace(/(\d)(\()/g, '$1*(');
       display.value=output;
-      return resultbracket;
+      break;
       case "x²":
       let numSquare = parseFloat(output);
       if (!isNaN(numSquare)) {
@@ -78,28 +79,38 @@ button.forEach(btn => {
   display.value=results.toFixed(3);
   output=results.toString();
   }else{
-  result=Math.PI
-  display.value=result;
+  let result=Math.PI
+  display.value=result.toFixed(6);
   }
   break;
 
 
       case "xʸ":
-       let numSquareds=parseFloat(output);
-      if (!isNaN(numSquareds)) {
-        let results = Math.pow(numSquareds, numSquareds);
-        display.value = results;
-        output = results.toString();
+      let results;
+      if (output.includes("xʸ")) {
+        let parts = output.split("xʸ");
+        let num1 = parseFloat(parts[0]);
+        let num2 = parseFloat(parts[1]);
+
+        results = Math.pow(num1,num2)
+        display.value=results;
       }
       break;
      case "Abs":
-    let numAbs=parseFloat(output);
-    if (!isNaN(numAbs)) {
-        let results = Math.abs(numAbs);
-        display.value -= results;
-        output = results.toString();
-      }
-      break;
+    let result;
+    if (output.includes("-")) {
+        let parts = output.split("-");
+        let num1 = parseFloat(parts[0]);
+        let num2 = parseFloat(parts[1]);
+
+        result = Math.abs(num1 - num2);
+    }
+
+    display.value = result;
+    output = result.toString();
+    break;
+
+    
     case "ON":
     output=0;
     display.value=output;
@@ -216,7 +227,7 @@ button.forEach(btn => {
     case "x³":
     let numSquared=parseFloat(output);
     if(alphaMode){
-    const result=Math.cbrt(numSquared);
+    const result=Math.cbrt(numSquared,3)
     display.value=result;
     output=result.toString();
     display.value=output;
@@ -229,37 +240,38 @@ button.forEach(btn => {
     break;
     case "^":
       let numSq = parseFloat(output);
+      let resultuy;
       if (alphaMode) {
       const results56=numSq * Math.E;
       display.value = results56.toFixed(6);
       output = results56.toString();
       alphaMode=false;
     }else{
-      let results=Math.pow(numSq);
-      display.value=results;
-      output=results.toString()
-    }
+       if(output.includes("^")){
+      let parts = output.split("^");
+        let num1 = parseFloat(parts[0]);
+        let num2 = parseFloat(parts[1]);
+        resultuy=Math.pow(num1,num2);
+        display.value=resultuy;
+       }
+      }
+  
     break;
-    case "=":
+    case ",":
     if(alphaMode){
     let percentage=parseFloat(output);
     let percentResult = "";
     percentResult = percentage / 100;
     display.value = percentResult;
     output = percentResult.toString();
-  }else{
-  try {
-        output = eval(output);
-        display.value = output;
-      } catch {
-        display.value = "Error";
-        output = "";
-        
-      }
-  }
+    }else{
+      output=","
+      display.value=output;
     }
+    break;
+  }
     })
-    })
+  })
    
 
 
